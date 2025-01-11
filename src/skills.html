@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Semegn Mulugeta's portfolio. Learn about my skills, interests, and aspirations as a Software Engineering student.">
+    <title>Skills & Education</title>
+    <link rel="stylesheet" href="css/skills.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <button class="hamburger" aria-label="Toggle navigation" onclick="toggleNav()">                                      
+           <span></span> 
+           <span></span>
+           <span></span> 
+        </button>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="moments.html">Favorite moments</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact-me.html">Contact me</a></li>
+        </ul>             
+        </nav>
+       
+    </header>
+    <main>
+        <h1>Skills & Education</h1>
+        <div class="sections-container">
+        </section>
+        <section>
+            <h2>General Skills</h2>
+            <ul>
+                <li>Problem-solving and critical thinking</li>
+                <li>Effective communication and teamwork</li>
+                <li>Time management and adaptability</li>
+                <li>Attention to detail</li>
+            </ul>
+        </section>
+        <section>
+            <h2>My Educational Journey</h2>
+
+            <p>I am currently pursuing a Software Engineering degree, where I am learning core concepts like algorithms, data structures, programming languages, and system design. The theoretical knowledge I gain in the classroom is constantly reinforced by hands-on projects and research assignments, enabling me to bridge the gap between theory and practice.</p>
+
+<p>In addition to my formal education, I regularly explore online courses and resources to stay updated with emerging technologies. This includes learning about new frameworks, programming languages, and best practices.</p>
+</section>
+
+        <div class="table-container">
+            <table>
+                <caption>Coding skills</caption>
+                <tr>
+                    <th>Programming Language</th>
+                    <th>Skill Level</th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <td>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar html" data-skill="95%">95%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar css" data-skill="80%">80%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>JavaScript</th>
+                    <td>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar javascript" data-skill="49%">49%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar java" data-skill="79%">79%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar python" data-skill="89%">89%</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        </div>       
+    </main>
+    <footer>
+        <small>
+            &copy; 2024, Copyrights reserved. | Designed by Semegn Mulugeta.
+        </small> 
+        
+    </footer>
+    
+    <script>
+        function toggleNav() {
+     var navLinks = document.getElementById('nav-links');
+     var body = document.body; navLinks.classList.toggle('show'); 
+     if (navLinks.classList.contains('show')) { body.classList.add('moved-content'); } else { body.classList.remove('moved-content'); }
+     }
+     const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');});
+    </script>
+ </body>
+ </html>

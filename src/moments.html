@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite moments</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Semegn Mulugeta's portfolio. Learn about my skills, interests, and aspirations as a Software Engineering student.">
+    <link rel="stylesheet" href="css/moments_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
+    <title>Favorite Moments</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <button class="hamburger" aria-label="Toggle navigation" onclick="toggleNav()">                                      
+           <span></span> 
+           <span></span>
+           <span></span> 
+        </button>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="moments.html">Favorite Moments</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact-me.html">Contact me</a></li>
+        </ul>          
+        </nav>        
+    </header>
+
+    <main>
+        <h1 class="title">Favorite Moments</h1>    
+        <section class="container">
+            <h2>Celebrating Christmas with my friends</h2>
+            <div class="gallery"> 
+                <figure>
+                    <img src="images/Gena1.jpg" alt="Performance of Ethiopian Orthodox song">
+                    <figcaption class="first">Group photo performing an Ethiopian Orthodox song</figcaption>
+                </figure>
+                <figure >
+                    <img src="images/Gena2.jpg" alt="Group photo at Christmas celebration" class="one">
+                    <figcaption class="second">Group photo with my friends at Christmas celebration</figcaption>
+                </figure>
+                <figure>
+                    <video controls>
+                        <source src="video/Gena.mp4" type="video/mp4">
+                    </video>
+                    <figcaption id="cut">Performance of <dfn lang="am">Wereb</dfn>, which is a type of Ethiopian Orthodox Christian song</figcaption>
+                </figure>
+            </div> 
+         </section>
+    
+        <section class="container">
+            <h2>Celebrating <dfn lang="am">Meskel</dfn>, a holiday that commemorates the discovery of the True Cross, with my friends</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/Meskel1.jpg" alt="A group photo before the bonfire">
+                    <figcaption>A group photo before the bonfire</figcaption>
+                </figure>
+                <figure >
+                    <img src="images/Meskel2.jpg" alt="Performing Religious Song">
+                    <figcaption>Performing Religious <span lang="am">Meskel</span> Song</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Meskel3.jpg" alt="Group photo with my friends">
+                    <figcaption>Group photo with my friends</figcaption>
+                </figure>
+            </div> 
+        </section>
+    
+        <section class="container">
+            <h2>Celebrating Culture Day with my friends</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/culture1.jpg" alt="Friends celebrating Culture Day in traditional costumes">
+                    <figcaption>Celebrating Culture Day in traditional costumes</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/culture2.jpg" alt="Group photo at Culture Day celebration">
+                    <figcaption>Group photo at Culture Day celebration</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/culture3.jpg" alt="celebrating Culture Day in traditional costumes ">
+                    <figcaption>Celebrating Culture Day with my friends </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            &copy; 2024, Copyrights reserved.| Designed by Semegn Mulugeta.
+        </small> 
+        
+
+    </footer>
+     <script>
+         function toggleNav() {
+     var navLinks = document.getElementById('nav-links');
+     var body = document.body; navLinks.classList.toggle('show'); 
+     if (navLinks.classList.contains('show')) { body.classList.add('moved-content'); } else { body.classList.remove('moved-content'); }
+     }
+     const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');});
+     </script>
+</body>
+</html>
